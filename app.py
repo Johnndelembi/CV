@@ -55,9 +55,9 @@ st.markdown('''
 
 st.write("###")
 
-st.subheader("**:orange[VOLUNTEER EXPERIENCE]**")
+st.subheader("**:orange [VOLUNTEER EXPERIENCE]**")
 
-st.write("**:orange[PSSSF]**, *Geita*")
+st.write("**:orange [PSSSF]**, *Geita*")
 st.write("July 2023 - September 2023")
 st.markdown('''
     - Participated in PSSSF volunteer training of the institution
