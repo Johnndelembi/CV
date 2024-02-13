@@ -35,7 +35,7 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 #------------------PAGE SETUP---------------
 
-st.title(":green[**JOHN NDELEMBI**]")
+st.title(":green[JOHN NDELEMBI]")
 st.markdown("**Data analyst | Dev | Graphic Designer**")
 
 st.write("###")
@@ -47,7 +47,7 @@ col4.button('Portfolio', 'https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wko
 
 st.write("---")
 
-st.subheader("**:green[PROFILE]**")
+st.subheader(":green[PROFILE]")
 
 st.markdown(''' 
     > I have 2 years of experience working with data, strong hands on experience with Python, Excell and STATA. I have completed 4 data science projects with an 85% efficiency in my lifetime. I have good understanding of statistics principles and their respective applications. I am a hard worker with a team-work oriented mindset. data driven decision-maker
@@ -55,9 +55,9 @@ st.markdown('''
 
 st.write("###")
 
-st.subheader("**:orange [VOLUNTEER EXPERIENCE]**")
+st.subheader(":orange [VOLUNTEER EXPERIENCE]")
 
-st.write("**:orange [PSSSF]**, *Geita*")
+st.write(":orange [PSSSF], *Geita*")
 st.write("July 2023 - September 2023")
 st.markdown('''
     - Participated in PSSSF volunteer training of the institution
