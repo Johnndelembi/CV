@@ -1,112 +1,121 @@
-from pathlib import Path
-
 import streamlit as st
-from PIL import Image
 
-
-# --- PATH SETTINGS ---
-current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
-
-
-# --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Ndelembi"
-PAGE_ICON = ":wave:"
-NAME = "John Ndelembi"
-DESCRIPTION = """
-Data Analyst, assisting enterprises by supporting data-driven decision-making.
-"""
-EMAIL = "williamjohnie61@gmail.com"
-SOCIAL_MEDIA = {
-    "Portfolio": "https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q",
-    "Twitter": "https://twitter.com/Johnwills171",
-}
-PROJECTS = {
-    "🏆 Machine Learning model for predicting salaries based on variables": "https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q",
-     " Worked with Data analysis projects developing models and training them ": "Link to be posted later"
-    }
-
-
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-
-
-# --- LOAD CSS, PDF & PROFIL PIC ---
-with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-profile_pic = Image.open(profile_pic)
-
-
-# --- HERO SECTION ---
-col1, col2 = st.columns(2, gap="small")
-with col1:
-    st.image(profile_pic, width=230)
-
-with col2:
-    st.title(NAME)
-    st.write(DESCRIPTION)
-    st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream",
+st.set_page_config(
+    page_title="CV",
+    page_icon=":brain:",
     )
-    st.write("📫", EMAIL)
+
+#---------------SIDEBAR--------------------------
+
+st.sidebar.image("picc.png", width=200)
+st.sidebar.write("###")
+
+st.sidebar.markdown(" > ***'...Data analyst asisting enterprises and organizations by supporting data driven decsisions towards growth..'***")
+
+st.sidebar.write("###")
+st.sidebar.header("**HARD SKILLS**")
+st.sidebar.markdown('''
+    - Data Management & Analysis (Competent in Python,R,STATA and Excell)
+    - Python Programming for Web app designs and development
+    - 3D Rendering (Beginners level)
+    - Graphic Design and Videography
+    - Marketting Content Creation''')
+
+st.sidebar.write("###")
+st.sidebar.header("**LANGUAGE**")
+st.sidebar.write('''
+    - Swahili 
+    - English (Written & Spoken)''')
+
+st.sidebar.subheader("CONTACT ME")
+st.sidebar.markdown(":telephone_receiver:(+255) 625 232 734")
+st.sidebar.write((":envelope: williamjohnie61@gmail.com"))
+st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 
-# --- SOCIAL LINKS ---
-st.write('\n')
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+#------------------PAGE SETUP---------------
 
+st.title(":green[**JOHN NDELEMBI**]")
+st.markdown("**Data analyst | Dev | Graphic Designer**")
 
-# --- EXPERIENCE & QUALIFICATIONS ---
-st.write('\n')
-st.subheader("Experience & Qulifications")
-st.write(
-    """
-- ✔️ 16 months of expereince extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python,R and Stata
-- ✔️ Good understanding of statistical principles and their respective applications
-- ✔️ Excellent team-player and displaying strong sense of initiative on tasks
-"""
-)
-
-
-# --- SKILLS ---
-st.write('\n')
-st.subheader("Hard Skills")
-st.write(
-    """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas, matplotlib)
-- 📊 Data Visulization: MS Excel, Python(matplotlib, seaborn)
-"""
-)
-
-
-# --- WORK HISTORY ---
-st.write('\n')
-st.subheader("Work History")
+st.write("###")
+col1, col2, col3, col4 = st.columns(4)
+col1.page_link(("https://www.linkedin.com/in/john-ndelembi-2157492b2/"), label="LinkedIn")
+col2.page_link(("https://github.com/dashboard"), label="Github")
+col3.page_link(("https://twitter.com/Johnwills171"), label="Twitter")
+col4.page_link(("https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q"), label="Portfolio")
 st.write("---")
 
-# --- JOBS
-st.write("🚧", "**Data Analyst | Work from home**")
-st.write("02/2023 - Present")
-st.write(
-    """
-- ► Currently not in college therefore i perfom data analysis and build data science projects from home.
-- ► Build a Machine Learning model for predicting salary of workers based on their experiences using Sci-kit lean library
-"""
-)
+st.subheader("**:green[PROFILE]**")
 
+st.markdown(''' 
+    > I have 2 years of experience working with data, strong hands on experience with Python, Excell and STATA. I have completed 4 data science projects with an 85% efficiency in my lifetime. I have good understanding of statistics principles and their respective applications. I am a hard worker with a team-work oriented mindset. data driven decision-maker
+    It would be an honor to work under your organization/company and drive growth with data driven decision.''')
 
-# --- Projects & Accomplishments ---
-st.write('\n')
-st.subheader("Projects & Accomplishments")
+st.write("###")
+
+st.subheader("**:orange[VOLUNTEER EXPERIENCE]**")
+
+st.write("**:orange[PSSSF]**, *Geita*")
+st.write("July 2023 - September 2023")
+st.markdown('''
+    - Participated in PSSSF volunteer training of the institution
+    - Assisted in operations department office work
+    - Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
+
+st.write("###")
+st.write("**:orange[ENNOVATE VENTURES]**, Dar es Salaam")
+st.write("April 2023 - June 2023")
+st.markdown('''
+    - Worked as a developer tasked to design a web app with the aim to solve a problem in the community
+    - Completed the task by 90% and submitted the project on time''')
+
+st.subheader("**:red[WORK EXPERIENCE]**")
+st.write("**:red[EVERYDAY MANIFESTATIONS]**,  *Dar es Salaam — C.E.O Personal Assistant*")
+st.markdown("April 2022 - July 2022")
+st.markdown('''
+    - Worked with the C.E.O in launching multiple marketing campaigns. 
+    - Performed 65% of back office activities of the company.''')
+
+st.write("###")    
+
+st.write("**:red[BRENDALICIOUS FRESH JUICE]**,  *Mbeya — Business analyst, Graphics designer.*")
+st.markdown("December 2022 - January 2023")
+st.markdown('''
+    - Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
+    - Worked as an assistant social media manager, ran considerable number of online based marketing campaigns.
+    - Established a stable system for business flow and operations.''')
+
+st.write("###")
+
+st.write("**:red[AIESEC IN UDSM]**, *Dar es Salaam -- Team member of Business and Patners development department*")
+st.markdown("June 2023 - Present")
+st.markdown('''
+    - Participated in organizing AIESEC International Relations event with EwA members
+    - Worked towards patnerships establishment for specific AIESEC Events and  for the entity at large
+    - Participated and worked in Campus held AIESEC events''')
+
+st.write("###")
+
+st.subheader("PROJECTS AND ACCOMPLISHMENTS")
+st.page_link(("https://dataproject.streamlit.app/"), label=':trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects')
+st.page_link(("https://dataproject.streamlit.app/"), label=' :trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code')
+st.page_link(("https://tally.so/r/n0dEVQ"), label=' :trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times' )
 st.write("---")
-for project, link in PROJECTS.items():
-       st.write(f"[{project}]({link})")
+
+
+
+#----------------FOOTER----------------------------------
+st.header("**REFERENCES**")
+
+cols1, cols2 = st.columns(2)
+
+cols1.subheader("Evelyn Mchau")
+cols1.caption("*EVERYDAY MANIFESTATIONS / CEO* ")
+cols1.markdown(":telephone_receiver: (+255) 768 180 503")
+cols1.write(":envelope: goodlyne23@gmail.com")
+
+cols2.subheader("Doreen Daffa")
+cols2.caption("*AIESEC IN UDSM*")
+cols2.markdown(":telephone_receiver: (+255) 684 327 666 ")
+cols2.write(":envelope: doreen.daffa@aiesec.net")
