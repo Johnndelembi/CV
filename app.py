@@ -35,12 +35,14 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 #------------------PAGE SETUP---------------
 
-st.title(":green[JOHN NDELEMBI]")
+st.title(":green [JOHN NDELEMBI]")
 st.markdown("**Data analyst | Dev | Graphic Designer**")
 
 st.write("###")
 col1, col2, col3, col4 = st.columns(4)
-col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/', 'LinkedIn, icon_size')
+icon_size=20
+
+col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/', 'LinkedIn, 'icon_size')
 col2.button('Github', 'https://github.com/dashboard', 'Github', 'icon_size')
 col3.button('Twitter', 'https://twitter.com/Johnwills171', 'Twitter', 'icon_size')
 col4.button('Portfolio', 'https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q', 'Twitter', 'icon_size')
@@ -99,8 +101,8 @@ st.markdown('''
 st.write("###")
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
-st.button('ACADEMIC RESULTS DASHBOARD & APP', 'https://dataproject.streamlit.app/', ':trophy: **ACADEMIC RESULTS DASHBOARD & APP** - Comparing Performances, relationships and causality across different subjects', 'icon_size')
-st.button('MY GRAPHICS DESIGNS COLLECTIONS', 'https://tally.so/r/n0dEVQ', ' :trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times', 'icon_size' )
+st.button('ACADEMIC RESULTS DASHBOARD & APP - Comparing Performances, relationships and causality across different subjects', 'https://dataproject.streamlit.app/', ':trophy: **ACADEMIC RESULTS DASHBOARD & APP** - Comparing Performances, relationships and causality across different subjects', 'icon_size')
+st.button('MY GRAPHICS DESIGNS COLLECTIONS - some of my graphic designs from different times', 'https://tally.so/r/n0dEVQ', ' :trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times', 'icon_size' )
 st.write("---")
 
 
