@@ -40,7 +40,7 @@ st.markdown("**Data analyst | Dev | Graphic Designer**")
 
 st.write("###")
 col1, col2, col3, col4 = st.columns(4)
-col1.page_link(("https://www.linkedin.com/in/john-ndelembi-2157492b2/"), label="LinkedIn")
+col1.page_link(("https://www.facebook.com/profile.php?id=100023764119508"), label="Facebook")
 col2.page_link(("https://github.com/dashboard"), label="Github")
 col3.page_link(("https://twitter.com/Johnwills171"), label="Twitter")
 col4.page_link(("https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q"), label="Portfolio")
