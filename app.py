@@ -42,7 +42,7 @@ st.write("###")
 col1, col2, col3, col4 = st.columns(4)
 icon_size=20
 
-col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/', 'LinkedIn, 'icon_size')
+col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/', 'LinkedIn', 'icon_size')
 col2.button('Github', 'https://github.com/dashboard', 'Github', 'icon_size')
 col3.button('Twitter', 'https://twitter.com/Johnwills171', 'Twitter', 'icon_size')
 col4.button('Portfolio', 'https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q', 'Twitter', 'icon_size')
