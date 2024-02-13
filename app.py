@@ -99,8 +99,7 @@ st.markdown('''
 st.write("###")
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
-st.button('ACADEMIC RESULTS DASHBOARD', 'https://dataproject.streamlit.app/', ':trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects', 'icon_size')
-st.button('DATA ANALYSIS APP', 'https://dataproject.streamlit.app/', ' :trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code', 'icon_size')
+st.button('ACADEMIC RESULTS DASHBOARD & APP', 'https://dataproject.streamlit.app/', ':trophy: **ACADEMIC RESULTS DASHBOARD & APP** - Comparing Performances, relationships and causality across different subjects', 'icon_size')
 st.button('MY GRAPHICS DESIGNS COLLECTIONS', 'https://tally.so/r/n0dEVQ', ' :trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times', 'icon_size' )
 st.write("---")
 
