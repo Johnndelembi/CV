@@ -40,14 +40,10 @@ st.markdown("**Data analyst | Dev | Graphic Designer**")
 
 st.write("###")
 col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.page_link(("https://www.facebook.com/profile.php?id=100023764119508"), label="Facebook")
-with col2:    
-    st.page_link(("https://github.com/dashboard"), label="Github")
-with col3:    
-    st.page_link(("https://twitter.com/Johnwills171"), label="Twitter")
-with col4:    
-    st.page_link(("https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q"), label="Portfolio")
+col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/', 'LinkedIn, icon_size')
+col2.button('Github', 'https://github.com/dashboard', 'Github', 'icon_size')
+col3.button('Twitter', 'https://twitter.com/Johnwills171', 'Twitter', 'icon_size')
+col4.button('Portfolio', 'https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q', 'Twitter', 'icon_size')
 
 st.write("---")
 
