@@ -35,7 +35,7 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 #------------------PAGE SETUP---------------
 
-st.title(":green [JOHN NDELEMBI]")
+st.title(":green: [JOHN NDELEMBI]")
 st.markdown("**Data analyst | Dev | Graphic Designer**")
 
 st.write("###")
